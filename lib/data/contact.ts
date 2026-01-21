@@ -52,11 +52,11 @@
  */
 export const contactSectionContent = {
   sectionTitle: "Get In Touch",
-  title: "Ready to Get Started?",
-  subtitle: "Get your free quote today. Our team is ready to help you achieve your goals with our professional services.",
+  title: "Ready for a Cleaner Property?",
+  subtitle: "Get your free power washing quote today. Our team is ready to restore your property's beauty with professional cleaning services.",
   contactInfo: {
     title: "Contact Information",
-    mapPlaceholder: "Our Service Area"
+    mapPlaceholder: "Pittsfield Area Service Map"
   },
   form: {
     title: "Get Your Free Quote",
@@ -73,7 +73,7 @@ export const contactSectionContent = {
       lastName: "Doe",
       email: "john@example.com",
       phone: "(555) 123-4567",
-      message: "Tell us about your needs and how we can help...",
+      message: "Tell us about your property and what you'd like cleaned...",
     },
     maxLengths: {
       message: 1000, // Maximum characters for the message field
@@ -81,13 +81,13 @@ export const contactSectionContent = {
     buttons: {
       submit: "Request Free Quote",
       submitting: "Sending...",
-      submitted: "Message Sent!",
+      submitted: "Quote Request Sent!",
     },
-    disclaimer: "By submitting this form, you agree to our privacy policy. We'll respond within 24 hours.",
-    successMessage: "Message Sent!",
-    errorMessage: "Failed to send message. Please try again or call us directly.",
+    disclaimer: "By submitting this form, you agree to our privacy policy. We'll respond within 24 hours with your free estimate.",
+    successMessage: "Quote Request Sent!",
+    errorMessage: "Failed to send request. Please try again or call us directly at (555) 123-4567.",
     quoteEmailTemplate: `
-      <h2>New Quote Request</h2>
+      <h2>New Power Washing Quote Request</h2>
       <p>You have received a new quote request from your website.</p>
 
       <h3>Customer Information</h3>
@@ -100,12 +100,12 @@ export const contactSectionContent = {
       <h3>Service Requested</h3>
       <p>{{service}}</p>
 
-      <h3>Message</h3>
+      <h3>Property Details / Message</h3>
       <p>{{message}}</p>
 
       <hr />
       <p style="color: #666; font-size: 12px;">
-        This email was sent from your website contact form.
+        This email was sent from the PowerWash Pro website contact form.
       </p>
     `,
   }

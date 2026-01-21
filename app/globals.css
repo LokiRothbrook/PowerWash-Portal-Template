@@ -63,7 +63,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
-
+  
   /* Sidebar Colors (specific to the sidebar component if used) */
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -73,14 +73,14 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
-
+  
   /* Chart Colors (for data visualization components) */
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
   --color-chart-2: var(--chart-2);
   --color-chart-1: var(--chart-1);
-
+  
   /* Core UI Colors (used by shadcn/ui and custom components) */
   --color-ring: var(--ring);
   --color-input: var(--input);
@@ -98,7 +98,7 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-
+  
   /* Border Radius Variants */
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -130,60 +130,62 @@
 * - If you're unfamiliar with `oklch`, you can use online color pickers
 *   that support it or convert from HSL/RGB.
 */
-:root {
-  /* Core Colors */
-  --background: oklch(0.13 0.015 270); /* Main background color */
-  --foreground: oklch(0.95 0.01 270); /* Main text color */
-  --card: oklch(0.17 0.02 270); /* Background color for cards/panels */
-  --card-foreground: oklch(0.95 0.01 270); /* Text color on cards */
-  --popover: oklch(0.17 0.02 270); /* Background color for popovers/tooltips */
-  --popover-foreground: oklch(0.95 0.01 270); /* Text color on popovers */
 
+/* Single Sky Blue Slate Theme */
+:root {
+   /* Core Colors */
+  --background: oklch(0.14 0.02 230); /* Main background color */
+  --foreground: oklch(0.95 0.01 220); /* Main text color */
+  --card: oklch(0.18 0.025 230); /* Background color for cards/panels */
+  --card-foreground: oklch(0.95 0.01 220); /* Text color on cards */
+  --popover: oklch(0.18 0.025 230); /* Background color for popovers/tooltips */
+  --popover-foreground: oklch(0.95 0.01 220); /* Text color on popovers */
+  
   /* Primary Accent Colors */
-  --primary: oklch(0.65 0.18 265); /* Primary brand color */
-  --primary-foreground: oklch(0.98 0.005 270); /* Text color on primary elements */
+  --primary: oklch(0.65 0.15 220); /* Primary brand color */
+  --primary-foreground: oklch(0.12 0.02 230); /* Text color on primary elements */
 
   /* Secondary Colors */
-  --secondary: oklch(0.24 0.025 270); /* Secondary background/accent color */
-  --secondary-foreground: oklch(0.95 0.01 270); /* Text color on secondary elements */
+  --secondary: oklch(0.25 0.03 230); /* Secondary background/accent color */
+  --secondary-foreground: oklch(0.95 0.01 220); /* Text color on secondary elements */
 
   /* Muted Colors */
-  --muted: oklch(0.21 0.02 270); /* Muted background for less prominent elements */
-  --muted-foreground: oklch(0.65 0.02 270); /* Muted text color */
+  --muted: oklch(0.22 0.025 230); /* Muted background for less prominent elements */
+  --muted-foreground: oklch(0.65 0.03 220); /* Muted text color */
 
   /* General Accent Color */
-  --accent: oklch(0.60 0.15 280); /* General accent color for highlights */
-  --accent-foreground: oklch(0.95 0.01 270); /* Text color on accent elements */
+  --accent: oklch(0.55 0.12 200); /* General accent color for highlights */
+  --accent-foreground: oklch(0.95 0.01 220); /* Text color on accent elements */
 
   /* Destructive/Error Color */
-  --destructive: oklch(0.60 0.22 25); /* Color for destructive actions or errors */
+  --destructive: oklch(0.65 0.2 25); /* Color for destructive actions or errors */
 
   /* Border and Input Colors */
-  --border: oklch(0.28 0.03 270); /* Default border color */
-  --input: oklch(0.28 0.03 270); /* Input field border/background color */
+  --border: oklch(0.28 0.035 230); /* Default border color */
+  --input: oklch(0.28 0.035 230); /* Input field border/background color */
 
-  /* Ring Color (for focus states) */
-  --ring: oklch(0.65 0.18 265); /* Color for focus rings/outlines */
+   /* Ring Color (for focus states) */
+  --ring: oklch(0.65 0.15 220); /* Color for focus rings/outlines */
 
   /* Chart Colors (used for data visualization, e.g., in dashboards) */
-  --chart-1: oklch(0.65 0.18 265); /* Chart color 1 */
-  --chart-2: oklch(0.58 0.15 280); /* Chart color 2 */
-  --chart-3: oklch(0.55 0.12 290); /* Chart color 3 */
-  --chart-4: oklch(0.70 0.14 255); /* Chart color 4 */
-  --chart-5: oklch(0.62 0.10 300); /* Chart color 5 */
+  --chart-1: oklch(0.65 0.15 220); /* Chart color 1 */
+  --chart-2: oklch(0.58 0.12 210); /* Chart color 2 */
+  --chart-3: oklch(0.52 0.10 200); /* Chart color 3 */
+  --chart-4: oklch(0.70 0.12 230);  /* Chart color 4 */
+  --chart-5: oklch(0.60 0.08 240);  /* Chart color 5 */
 
   /* Global Border Radius */
   --radius: 0.75rem; /* Base border radius for most elements */
 
-  /* Sidebar Specific Colors (if applicable) */
-  --sidebar: oklch(0.15 0.02 270); /* Sidebar background */
-  --sidebar-foreground: oklch(0.95 0.01 270); /* Sidebar text */
-  --sidebar-primary: oklch(0.65 0.18 265); /* Primary items in sidebar */
-  --sidebar-primary-foreground: oklch(0.98 0.005 270); /* Text on sidebar primary items */
-  --sidebar-accent: oklch(0.60 0.15 280); /* Accent items in sidebar */
-  --sidebar-accent-foreground: oklch(0.95 0.01 270); /* Text on sidebar accent items */
-  --sidebar-border: oklch(0.28 0.03 270); /* Sidebar border */
-  --sidebar-ring: oklch(0.65 0.18 265); /* Sidebar focus ring */
+   /* Sidebar Specific Colors (if applicable) */
+  --sidebar: oklch(0.16 0.025 230); /* Sidebar background */
+  --sidebar-foreground: oklch(0.95 0.01 220); /* Sidebar text */
+  --sidebar-primary: oklch(0.65 0.15 220); /* Primary items in sidebar */
+  --sidebar-primary-foreground: oklch(0.12 0.02 230); /* Text on sidebar primary items */
+  --sidebar-accent: oklch(0.55 0.12 200); /* Accent items in sidebar */
+  --sidebar-accent-foreground: oklch(0.95 0.01 220); /* Text on sidebar accent items */
+  --sidebar-border: oklch(0.28 0.035 230); /* Sidebar border */
+  --sidebar-ring: oklch(0.65 0.15 220); /* Sidebar focus ring */
 }
 
 /*
@@ -206,6 +208,7 @@
   }
 }
 
+/* Sky Blue Glow Effects */
 /*
 * Primary Glow Effects
 *
@@ -218,20 +221,20 @@
 * - Modify the blur radius and alpha values to control the intensity and spread.
 */
 .glow-blue {
-  box-shadow: 0 0 20px oklch(0.65 0.18 265 / 0.4),
-              0 0 40px oklch(0.65 0.18 265 / 0.25),
-              0 0 60px oklch(0.65 0.18 265 / 0.15);
+  box-shadow: 0 0 20px oklch(0.65 0.15 220 / 0.4),
+              0 0 40px oklch(0.65 0.15 220 / 0.25),
+              0 0 60px oklch(0.65 0.15 220 / 0.15);
 }
 
 .glow-accent {
-  box-shadow: 0 0 20px oklch(0.60 0.15 280 / 0.3),
-              0 0 40px oklch(0.60 0.15 280 / 0.2),
-              0 0 60px oklch(0.60 0.15 280 / 0.1);
+  box-shadow: 0 0 20px oklch(0.55 0.12 200 / 0.3),
+              0 0 40px oklch(0.55 0.12 200 / 0.2),
+              0 0 60px oklch(0.55 0.12 200 / 0.1);
 }
 
 .text-glow {
-  text-shadow: 0 0 10px oklch(0.65 0.18 265 / 0.5),
-               0 0 20px oklch(0.65 0.18 265 / 0.3);
+  text-shadow: 0 0 10px oklch(0.65 0.15 220 / 0.5),
+               0 0 20px oklch(0.65 0.15 220 / 0.3);
 }
 
 /*
@@ -245,11 +248,12 @@
 *   the gradient colors.
 * - Adjust the `135deg` value to change the direction of the gradient.
 */
+/* Sky Blue Gradient Text */
 .gradient-text {
   background: linear-gradient(135deg,
-    oklch(0.75 0.18 260) 0%,
-    oklch(0.65 0.20 270) 50%,
-    oklch(0.55 0.18 285) 100%
+    oklch(0.75 0.15 210) 0%,
+    oklch(0.65 0.18 220) 50%,
+    oklch(0.55 0.15 235) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -269,15 +273,15 @@
 * - Adjust the `border` color and transparency to match.
 */
 .glass {
-  background: oklch(0.17 0.02 270 / 0.6);
+  background: oklch(0.18 0.025 230 / 0.6);
   backdrop-filter: blur(20px);
-  border: 1px solid oklch(0.65 0.18 265 / 0.15);
+  border: 1px solid oklch(0.65 0.15 220 / 0.15);
 }
 
 .glass-card {
-  background: oklch(0.15 0.02 270 / 0.7);
+  background: oklch(0.16 0.02 230 / 0.7);
   backdrop-filter: blur(16px);
-  border: 1px solid oklch(0.65 0.18 265 / 0.1);
+  border: 1px solid oklch(0.65 0.15 220 / 0.1);
 }
 
 /*
@@ -297,144 +301,118 @@
 * - Change percentage values (e.g., `0%`, `50%`, `100%`) to adjust when
 *   different animation states occur.
 */
-@keyframes laser-wave {
+@keyframes rain-fall {
   0% {
-    transform: translateX(-100%) translateY(0) rotate(-5deg);
+    transform: translateY(-100vh);
     opacity: 0;
   }
   10% {
-    opacity: 1;
+    opacity: 0.7;
   }
   90% {
-    opacity: 1;
+    opacity: 0.7;
   }
   100% {
-    transform: translateX(200%) translateY(-50px) rotate(-5deg);
+    transform: translateY(100vh);
     opacity: 0;
   }
 }
 
-@keyframes laser-wave-reverse {
+@keyframes rain-splash {
   0% {
-    transform: translateX(200%) translateY(0) rotate(5deg);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
+    transform: scale(0);
+    opacity: 0.8;
   }
   100% {
-    transform: translateX(-100%) translateY(50px) rotate(5deg);
+    transform: scale(2);
     opacity: 0;
   }
 }
 
-@keyframes laser-pulse {
+@keyframes mist-float {
   0%, 100% {
-    opacity: 0.3;
-    transform: scaleY(1);
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-10px) translateX(5px);
   }
   50% {
-    opacity: 0.6;
-    transform: scaleY(1.5);
+    transform: translateY(5px) translateX(-5px);
+  }
+  75% {
+    transform: translateY(-5px) translateX(10px);
   }
 }
 
-@keyframes wave-float {
+@keyframes mist-pulse {
   0%, 100% {
-    transform: translateY(0) rotate(-2deg);
+    filter: blur(60px) brightness(1);
+    opacity: 0.2;
   }
   50% {
-    transform: translateY(-20px) rotate(2deg);
-  }
-}
-
-@keyframes glow-pulse {
-  0%, 100% {
-    filter: blur(40px) brightness(1);
-    opacity: 0.4;
-  }
-  50% {
-    filter: blur(60px) brightness(1.3);
-    opacity: 0.6;
+    filter: blur(80px) brightness(1.2);
+    opacity: 0.35;
   }
 }
 
 /*
-* Accent Line Styles (`.laser-wave` classes)
+* Rain Drop Styles (`.rain-drop` classes)
 *
-* These classes apply animated linear gradients to create "laser wave" effects,
-* often used as decorative dividers or background elements. They reference the
-* `laser-wave` and `laser-wave-reverse` keyframes.
+* These classes create animated water droplets that fall from top to bottom,
+* simulating rain for the power washing theme.
 *
 * How to Edit:
-* - Adjust `background` `linear-gradient` colors to change the line's color.
-* - Modify `box-shadow` colors for the glow around the line.
-* - Change `animation-duration` (e.g., `8s`, `12s`) and `animation-delay`
-*   to control animation speed and start times.
-* - Adjust `height` and `opacity` for visual variation.
+* - Adjust `background` colors to change the droplet color.
+* - Modify `box-shadow` colors for the glow around the droplet.
+* - Change `animation-duration` to control fall speed.
+* - Adjust `height` and `width` for droplet size.
 */
-.laser-wave {
+.rain-drop {
   position: absolute;
-  height: 2px;
-  background: linear-gradient(90deg,
+  top: -20px;
+  width: 2px;
+  height: 20px;
+  background: linear-gradient(180deg,
     transparent 0%,
-    oklch(0.65 0.18 265) 20%,
-    oklch(0.75 0.2 270) 50%,
-    oklch(0.65 0.18 265) 80%,
-    transparent 100%
+    oklch(0.65 0.15 220 / 0.6) 50%,
+    oklch(0.75 0.18 215 / 0.8) 100%
   );
+  border-radius: 0 0 50% 50%;
   box-shadow:
-    0 0 10px oklch(0.65 0.18 265 / 0.8),
-    0 0 20px oklch(0.65 0.18 265 / 0.5),
-    0 0 40px oklch(0.65 0.18 265 / 0.3);
-  animation: laser-wave 8s ease-in-out infinite;
+    0 0 6px oklch(0.65 0.15 220 / 0.4),
+    0 0 12px oklch(0.65 0.15 220 / 0.2);
+  animation: rain-fall 2s linear infinite;
   will-change: transform, opacity;
 }
 
-.laser-wave-2 {
-  animation: laser-wave 12s ease-in-out infinite;
-  animation-delay: 2s;
-  height: 1px;
-  opacity: 0.7;
-}
-
-.laser-wave-3 {
-  animation: laser-wave-reverse 10s ease-in-out infinite;
-  animation-delay: 4s;
-  height: 3px;
-}
-
-.laser-wave-4 {
-  animation: laser-wave-reverse 14s ease-in-out infinite;
-  animation-delay: 6s;
-  height: 1px;
-  opacity: 0.5;
+.rain-drop-large {
+  width: 3px;
+  height: 30px;
+  box-shadow:
+    0 0 8px oklch(0.65 0.15 220 / 0.5),
+    0 0 16px oklch(0.65 0.15 220 / 0.3);
 }
 
 /*
-* Glow Orbs (`.wave-glow`)
+* Water Mist Effects (`.water-mist`)
 *
-* Creates animated, radial glowing orb effects. It references the `glow-pulse`
-* keyframes.
+* Creates animated, radial mist/spray effects to simulate water spray.
 *
 * How to Edit:
-* - Adjust `background` `radial-gradient` colors and alpha values for orb appearance.
+* - Adjust `background` `radial-gradient` colors and alpha values for mist appearance.
 * - Modify `animation-duration` to change pulse speed.
 */
-.wave-glow {
+.water-mist {
   position: absolute;
   border-radius: 50%;
   background: radial-gradient(
     ellipse at center,
-    oklch(0.65 0.18 265 / 0.4) 0%,
-    oklch(0.55 0.15 275 / 0.2) 40%,
+    oklch(0.65 0.12 220 / 0.25) 0%,
+    oklch(0.55 0.10 225 / 0.15) 40%,
     transparent 70%
   );
-  animation: glow-pulse 6s ease-in-out infinite;
-  will-change: filter, opacity;
+  animation: mist-pulse 8s ease-in-out infinite, mist-float 12s ease-in-out infinite;
+  will-change: filter, opacity, transform;
 }
 
 /*
@@ -491,11 +469,11 @@
 /* Pulse glow */
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 20px oklch(0.65 0.18 265 / 0.3);
+    box-shadow: 0 0 20px oklch(0.65 0.15 220 / 0.3);
   }
   50% {
-    box-shadow: 0 0 40px oklch(0.65 0.18 265 / 0.5),
-                0 0 60px oklch(0.65 0.18 265 / 0.3);
+    box-shadow: 0 0 40px oklch(0.65 0.15 220 / 0.5),
+                0 0 60px oklch(0.65 0.15 220 / 0.3);
   }
 }
 
@@ -518,7 +496,7 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    oklch(0.65 0.18 265 / 0.15) 50%,
+    oklch(0.65 0.15 220 / 0.15) 50%,
     transparent 100%
   );
   background-size: 200% 100%;
@@ -559,29 +537,29 @@
 */
 .hero-card-1 {
   background: linear-gradient(135deg,
-    oklch(0.20 0.04 265 / 0.9) 0%,
-    oklch(0.25 0.05 270 / 0.8) 100%
+    oklch(0.20 0.04 220 / 0.9) 0%,
+    oklch(0.25 0.05 225 / 0.8) 100%
   );
   backdrop-filter: blur(20px);
-  border: 1px solid oklch(0.65 0.18 265 / 0.2);
+  border: 1px solid oklch(0.65 0.15 220 / 0.2);
 }
 
 .hero-card-2 {
   background: linear-gradient(135deg,
-    oklch(0.22 0.04 275 / 0.9) 0%,
-    oklch(0.18 0.05 280 / 0.8) 100%
+    oklch(0.22 0.04 210 / 0.9) 0%,
+    oklch(0.18 0.05 200 / 0.8) 100%
   );
   backdrop-filter: blur(20px);
-  border: 1px solid oklch(0.60 0.15 280 / 0.25);
+  border: 1px solid oklch(0.55 0.12 200 / 0.25);
 }
 
 .hero-card-3 {
   background: linear-gradient(135deg,
-    oklch(0.18 0.05 260 / 0.9) 0%,
-    oklch(0.22 0.04 255 / 0.8) 100%
+    oklch(0.18 0.05 235 / 0.9) 0%,
+    oklch(0.22 0.04 240 / 0.8) 100%
   );
   backdrop-filter: blur(20px);
-  border: 1px solid oklch(0.65 0.14 255 / 0.2);
+  border: 1px solid oklch(0.60 0.10 235 / 0.2);
 }
 
 /*
@@ -605,8 +583,8 @@ html {
 * - Adjust `background` and `color` `oklch()` values to match your theme.
 */
 ::selection {
-  background: oklch(0.65 0.18 265 / 0.4);
-  color: oklch(0.95 0.01 270);
+  background: oklch(0.65 0.15 220 / 0.4);
+  color: oklch(0.95 0.01 220);
 }
 
 /*
@@ -627,16 +605,16 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background: oklch(0.13 0.015 270);
+  background: oklch(0.14 0.02 230);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: oklch(0.65 0.18 265 / 0.4);
+  background: oklch(0.65 0.15 220 / 0.4);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.65 0.18 265 / 0.6);
+  background: oklch(0.65 0.15 220 / 0.6);
 }
 
 /*
@@ -653,7 +631,7 @@ html {
 */
 .water-pattern {
   background:
-    radial-gradient(ellipse at 20% 80%, oklch(0.55 0.15 270 / 0.15) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 20%, oklch(0.65 0.18 265 / 0.1) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, oklch(0.60 0.12 275 / 0.08) 0%, transparent 60%);
+    radial-gradient(ellipse at 20% 80%, oklch(0.55 0.12 220 / 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, oklch(0.65 0.15 210 / 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, oklch(0.60 0.10 225 / 0.08) 0%, transparent 60%);
 }

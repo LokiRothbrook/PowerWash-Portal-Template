@@ -30,11 +30,11 @@ export const aboutSectionContent = {
   sectionTitle: "About Us",
   title: {
     line1: "Your Trusted",
-    line2: "Business Partner"
+    line2: "Power Washing Experts"
   },
   paragraphs: [
-    "Since 2015, we've been helping clients achieve their goals with exceptional service. What started as a small operation has grown into one of the region's most trusted service providers.",
-    "Our team of trained professionals uses industry-leading methods and best practices to deliver results that exceed expectations. We treat every client like family, because your satisfaction is our success."
+    "Since 2015, PowerWash Pro has been restoring properties to their original beauty throughout the Pittsfield area. What started as a one-truck operation has grown into the region's most trusted power washing company.",
+    "Our team of trained professionals uses state-of-the-art equipment and eco-friendly cleaning solutions to deliver results that exceed expectations. We treat every property like our own, because your satisfaction is our success."
   ],
   image: {
     /** Path to the about section image. Set to null to use the animated visual instead. */
@@ -44,33 +44,33 @@ export const aboutSectionContent = {
     /** First line of text below the year (e.g., "Years of Excellence") */
     line1: "Years of Excellence",
     /** Second line of text (e.g., "Serving Clients Since 2015") */
-    line2: "Serving Clients Since 2015",
+    line2: "Serving the Pittsfield Area Since 2015",
   },
   statsCard: {
     value: "99%",
     label: "Satisfaction"
   },
   stats: [
-    { icon: Users, value: "500+", label: "Happy Clients" },
+    { icon: Users, value: "500+", label: "Happy Customers" },
     { icon: Trophy, value: "10+", label: "Years Experience" },
-    { icon: Sparkles, value: "5K+", label: "Projects Completed" },
+    { icon: Sparkles, value: "5K+", label: "Properties Cleaned" },
     { icon: ThumbsUp, value: "99%", label: "Satisfaction Rate" },
   ],
   values: [
     {
-      title: "Quality First",
-      description: "We use the best tools and methods to deliver outstanding results every time.",
+      title: "Quality Results",
+      description: "We use professional-grade equipment and proven techniques for spotless results every time.",
     },
     {
-      title: "Customer Focus",
-      description: "Your needs are our priority. We tailor our approach to exceed expectations.",
+      title: "Property Protection",
+      description: "Safe, damage-free cleaning methods tailored to your specific surfaces and materials.",
     },
     {
       title: "Reliable Service",
-      description: "We show up on time, every time. Your schedule is our priority.",
+      description: "We show up on time, every time. Same week scheduling available for most jobs.",
     },
     {
-      title: "Fair Pricing",
+      title: "Honest Pricing",
       description: "Transparent quotes with no hidden fees. You know exactly what you're paying for.",
     },
   ]

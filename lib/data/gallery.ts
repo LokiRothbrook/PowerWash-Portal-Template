@@ -43,8 +43,8 @@
  */
 export const showcaseSectionContent = {
   sectionTitle: "Our Work",
-  title: "Featured Projects",
-  subtitle: "Browse our portfolio of successful projects and see the quality results we deliver for clients like you.",
+  title: "Before & After Results",
+  subtitle: "See the dramatic transformations we achieve for our customers. Our power washing services restore properties to their original beauty.",
   button: {
     text: "View Full Gallery",
     href: "/gallery"
@@ -80,18 +80,18 @@ export interface GalleryItem {
  *   You can use different categories to allow for filtering in the gallery page.
  */
 export const galleryItems: GalleryItem[] = [
-  { id: 1, title: "Project Title", category: "Category One", image: "/gallery/project-1.svg", description: "Brief description of this project or work sample" },
-  { id: 2, title: "Project Title", category: "Category Two", image: "/gallery/project-2.svg", description: "Brief description of this project or work sample" },
-  { id: 3, title: "Project Title", category: "Category One", image: "/gallery/project-3.svg", description: "Brief description of this project or work sample" },
-  { id: 4, title: "Project Title", category: "Category Three", image: "/gallery/project-4.svg", description: "Brief description of this project or work sample" },
-  { id: 5, title: "Project Title", category: "Category Two", image: "/gallery/project-5.svg", description: "Brief description of this project or work sample" },
-  { id: 6, title: "Project Title", category: "Category One", image: "/gallery/project-6.svg", description: "Brief description of this project or work sample" },
-  { id: 7, title: "Project Title", category: "Category Three", image: "/gallery/project-7.svg", description: "Brief description of this project or work sample" },
-  { id: 8, title: "Project Title", category: "Category Two", image: "/gallery/project-8.svg", description: "Brief description of this project or work sample" },
-  { id: 9, title: "Project Title", category: "Category One", image: "/gallery/project-9.svg", description: "Brief description of this project or work sample" },
-  { id: 10, title: "Project Title", category: "Category Three", image: "/gallery/project-10.svg", description: "Brief description of this project or work sample" },
-  { id: 11, title: "Project Title", category: "Category Two", image: "/gallery/project-11.svg", description: "Brief description of this project or work sample" },
-  { id: 12, title: "Project Title", category: "Category One", image: "/gallery/project-12.svg", description: "Brief description of this project or work sample" }
+  { id: 1, title: "Colonial Home Restoration", category: "House Washing", image: "/gallery/project-1.svg", description: "Complete exterior cleaning of a two-story colonial home, removing years of algae and grime" },
+  { id: 2, title: "Driveway Transformation", category: "Concrete Cleaning", image: "/gallery/project-2.svg", description: "Oil stain and tire mark removal from a concrete driveway, restoring original appearance" },
+  { id: 3, title: "Ranch Style Home", category: "House Washing", image: "/gallery/project-3.svg", description: "Soft wash cleaning of vinyl siding with mold and mildew removal" },
+  { id: 4, title: "Cedar Deck Revival", category: "Deck Cleaning", image: "/gallery/project-4.svg", description: "Weathered cedar deck restored to natural wood color, ready for sealing" },
+  { id: 5, title: "Patio Stone Cleaning", category: "Concrete Cleaning", image: "/gallery/project-5.svg", description: "Flagstone patio deep cleaned, removing embedded dirt and moss" },
+  { id: 6, title: "Victorian Home Exterior", category: "House Washing", image: "/gallery/project-6.svg", description: "Gentle cleaning of historic Victorian home with detailed trim work" },
+  { id: 7, title: "Composite Deck Cleaning", category: "Deck Cleaning", image: "/gallery/project-7.svg", description: "Trex composite deck cleaned and restored to like-new condition" },
+  { id: 8, title: "Sidewalk & Walkway", category: "Concrete Cleaning", image: "/gallery/project-8.svg", description: "Residential sidewalk and walkway cleaning with edge detail work" },
+  { id: 9, title: "Cape Cod Home", category: "House Washing", image: "/gallery/project-9.svg", description: "Full exterior wash including soffits and gutters on a Cape Cod style home" },
+  { id: 10, title: "Pool Deck Restoration", category: "Deck Cleaning", image: "/gallery/project-10.svg", description: "Concrete pool deck cleaned and treated for algae prevention" },
+  { id: 11, title: "Commercial Storefront", category: "Commercial", image: "/gallery/project-11.svg", description: "Retail storefront and sidewalk cleaning for a local business" },
+  { id: 12, title: "Parking Lot Cleaning", category: "Commercial", image: "/gallery/project-12.svg", description: "Commercial parking lot deep cleaning with oil stain treatment" }
 ]
 
 // ============================================================================
@@ -109,5 +109,5 @@ export const galleryItems: GalleryItem[] = [
  */
 export const galleryPageContent = {
   title: "Project Gallery",
-  description: "Browse our gallery of completed projects. See the quality and craftsmanship we bring to every job, from small repairs to large-scale installations.",
+  description: "Browse our gallery of power washing transformations. See the dramatic before and after results we achieve for homes and businesses throughout the Pittsfield area.",
 };

@@ -46,54 +46,54 @@ export interface FAQItem {
  */
 export const faqData: FAQItem[] = [
   {
-    question: "What is the primary service you offer?",
+    question: "What is power washing and how is it different from pressure washing?",
     answer:
-      "Our primary service is [Your Primary Service], where we specialize in [briefly describe what you do]. We focus on delivering high-quality results tailored to our clients' needs.",
+      "Power washing uses heated water under high pressure, while pressure washing uses unheated water. We use both techniques depending on the surface and type of dirt or stain being removed. Our experts will recommend the best approach for your specific needs.",
   },
   {
-    question: "How do I get a quote for my project?",
+    question: "How do I get a free quote?",
     answer:
-      "Getting a quote is easy! Simply navigate to our contact section and fill out the form, or give us a call at [Your Phone Number]. We'll get back to you with a detailed, no-obligation estimate.",
+      "Getting a quote is easy! Simply fill out our contact form or give us a call at (555) 123-4567. We'll schedule a time to assess your property and provide a detailed, no-obligation estimate.",
   },
   {
     question: "What areas do you serve?",
     answer:
-      "We primarily serve the [Your City/Region] area. If you're located outside this region, please contact us to see if we can accommodate your project.",
+      "We proudly serve the entire Pittsfield area and surrounding communities. If you're unsure whether we cover your location, please contact us and we'll let you know.",
   },
   {
-    question: "What makes your business different from competitors?",
+    question: "Will power washing damage my property?",
     answer:
-    "We pride ourselves on our commitment to quality, customer satisfaction, and attention to detail. Our team is highly experienced, and we use the latest techniques and equipment to ensure the best possible outcome for your project.",
+      "Not when done by professionals! We adjust our pressure settings and techniques based on the surface material. We use soft wash methods for delicate surfaces like roofs and siding, and higher pressure for durable surfaces like concrete.",
   },
   {
-    question: "How long does a typical project take?",
+    question: "How often should I have my house washed?",
     answer:
-      "Project timelines can vary depending on the scope and complexity. Once we provide a quote, we will also give you an estimated timeline for completion.",
+      "We recommend having your home's exterior washed every 1-2 years, depending on your environment. Homes in shaded or humid areas may need more frequent cleaning due to faster algae and mold growth.",
   },
   {
     question: "Are you licensed and insured?",
     answer:
-      "Yes, we are fully licensed and insured. We believe in providing a professional and secure service for all our clients, giving you peace of mind.",
+      "Yes, we are fully licensed and insured. We carry comprehensive liability insurance to protect both our team and your property, giving you complete peace of mind.",
   },
   {
     question: "Do you offer free estimates?",
-    answer: "Yes! We provide free, no-obligation estimates for all our services. Contact us to schedule your consultation."
+    answer: "Yes! We provide free, no-obligation estimates for all our power washing services. Contact us to schedule your assessment."
   },
   {
     question: "What payment methods do you accept?",
-    answer: "We accept all major credit cards, checks, and offer convenient payment plans for larger projects."
+    answer: "We accept all major credit cards, checks, and cash. Payment is due upon completion of the job."
   },
   {
-    question: "How long does a typical project take?",
-    answer: "Project timelines vary based on scope. We'll provide a clear timeline during your consultation."
+    question: "How long does a typical power washing job take?",
+    answer: "Most residential jobs are completed in 2-4 hours. Larger properties or multiple services may take longer. We'll provide a time estimate with your quote."
   },
   {
-    question: "Do you work with businesses?",
-    answer: "Absolutely! We offer comprehensive services for businesses of all sizes. Contact us for a custom quote."
+    question: "Do you work with commercial properties?",
+    answer: "Absolutely! We offer commercial power washing for storefronts, parking lots, dumpster areas, and more. Contact us for a custom commercial quote."
   },
   {
-    question: "What areas do you serve?",
-    answer: "We serve a wide area. Contact us to confirm service availability in your location."
+    question: "Is your cleaning solution safe for plants and pets?",
+    answer: "Yes! We use eco-friendly, biodegradable cleaning solutions that are safe for your landscaping, pets, and family. We take care to protect your plants during the cleaning process."
   },
 ];
 
@@ -112,5 +112,5 @@ export const faqData: FAQItem[] = [
  */
 export const faqPageContent = {
   title: "Frequently Asked Questions",
-  description: "Have questions? We have answers. Find answers to common questions about our services, pricing, process, and more.",
+  description: "Have questions about power washing? Find answers to common questions about our services, process, pricing, and what to expect when you hire PowerWash Pro.",
 };

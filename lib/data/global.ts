@@ -48,17 +48,17 @@ import { Shield, Award, Clock, Sparkles } from "lucide-react"; // Only for hero 
  * - Replace all placeholder strings with your actual business information.
  */
 export const companyInfo = {
-  name: "Your Business Name",
-  tagline: "Your Business Tagline Goes Here",
+  name: "PowerWash Pro",
+  tagline: "The Pittsfield Area's premier power washing company. Professional pressure washing for homes, driveways, decks, roofs & commercial properties. Get your free quote today!",
   phone: "(555) 123-4567",
-  email: "contact@yourbusiness.com",
-  address: "123 Business Street, City, State 12345",
-  hours: "Mon-Fri: 9AM-5PM | Sat: 10AM-2PM",
+  email: "contact@powerwashpro.com",
+  address: "123 Main Street, Pittsfield, MA 01201",
+  hours: "Mon-Fri: 7AM-6PM | Sat: 8AM-4PM",
   social: {
-    facebook: "https://facebook.com/yourbusiness",
-    instagram: "https://instagram.com/yourbusiness",
-    x: "https://x.com/yourbusiness",
-    youtube: "https://youtube.com/@yourbusiness"
+    facebook: "https://facebook.com/powerwashpro",
+    instagram: "https://instagram.com/powerwashpro",
+    x: "https://x.com/powerwashpro",
+    youtube: "https://youtube.com/@powerwashpro"
   }
 };
 
@@ -85,8 +85,8 @@ export const siteConfig = {
       enabled: true,
     },
     pricing: {
-      enabled: true,
-      showIndividualServicesPricing: true, // New toggle for individual services pricing section
+      enabled: false,
+      showIndividualServicesPricing: false,
     },
     faq: {
       enabled: true,
@@ -136,7 +136,6 @@ export const headerContent = {
     { label: "Home", href: "/#" },
     { label: "About Us", href: "/about" },
     { label: "Services", href: "/services", hasDropdown: true },
-    { label: "Pricing", href: "/pricing" },
     { label: "Gallery", href: "/gallery" },
     { label: "FAQ", href: "/faq" },
   ],
@@ -174,7 +173,7 @@ export const headerContent = {
  *   very bottom bar of the footer (e.g., Privacy Policy, Terms of Service).
  */
 export const footerContent = {
-  taglineSuffix: "Your trusted partner for professional services in your area.",
+  taglineSuffix: "The Pittsfield Area's premier power washing company. Professional pressure washing for homes, driveways, decks, roofs & commercial properties. Get your free quote today!",
   columns: {
     services: {
       title: "Our Services",
@@ -185,7 +184,6 @@ export const footerContent = {
       links: [
         { label: "Home", href: "/#" },
         { label: "About Us", href: "/#about" },
-        { label: "Pricing", href: "/pricing" },
         { label: "Gallery", href: "/gallery" },
         { label: "Testimonials", href: "/#testimonials" },
         { label: "Contact", href: "/#contact" }
@@ -220,8 +218,8 @@ export const footerContent = {
  * - Modify the `primaryButton` and `secondaryButton` texts and their respective `href` (links).
  */
 export const callToActionSectionContent = {
-  title: "Ready to Get Started?",
-  subtitle: "Let us help you achieve your goals. Contact us today for a free consultation.",
+  title: "Ready for a Spotless Property?",
+  subtitle: "Get your free quote today. Our team is ready to restore your property to its original beauty with professional power washing services in the Pittsfield area.",
   primaryButton: {
     text: "Get Free Quote",
     href: "/#contact"
@@ -253,9 +251,9 @@ export const callToActionSectionContent = {
 export const heroSectionContent = {
   title: {
     line1: "Professional",
-    line2: "Services"
+    line2: "Power Washing"
   },
-  subtitle: "Experience excellence with our premier professional services. From individuals to businesses, we deliver outstanding results every time.",
+  subtitle: "Restore your property's beauty with the Pittsfield Area's premier power washing service. From homes to businesses, we deliver spotless results every time.",
   buttons: {
     primary: {
       text: "Get Free Estimate",
@@ -283,19 +281,19 @@ export const heroSectionContent = {
   heroCards: [
     {
       id: 1,
-      title: "Quality Service",
-      subtitle: "For Individuals",
-      description: "Experience exceptional service tailored to your needs. We deliver professional results that exceed expectations.",
+      title: "Residential Cleaning",
+      subtitle: "Home Exteriors",
+      description: "Transform your home's appearance with our professional house washing, driveway cleaning, and deck restoration services.",
       cardClass: "hero-card-1",
       icon: Sparkles,
-      stats: "500+ Happy Clients",
+      stats: "500+ Homes Cleaned",
       delay: 0,
     },
     {
       id: 2,
-      title: "Business Solutions",
-      subtitle: "For Companies",
-      description: "Partner with professionals who understand your business needs. Custom solutions that drive real results.",
+      title: "Commercial Services",
+      subtitle: "Business Properties",
+      description: "Keep your business looking professional with our commercial power washing for storefronts, parking lots, and facilities.",
       cardClass: "hero-card-2",
       icon: Award,
       stats: "100+ Businesses Served",
@@ -303,12 +301,12 @@ export const heroSectionContent = {
     },
     {
       id: 3,
-      title: "Reliable Support",
-      subtitle: "Always Available",
-      description: "Count on us for consistent, reliable service. We're here when you need us, delivering excellence every time.",
+      title: "Year-Round Service",
+      subtitle: "All Seasons",
+      description: "From spring cleaning to fall maintenance, we keep your property looking pristine throughout the entire year.",
       cardClass: "hero-card-3",
       icon: Clock,
-      stats: "24/7 Support",
+      stats: "365 Days Available",
       delay: 0.2,
     },
   ]

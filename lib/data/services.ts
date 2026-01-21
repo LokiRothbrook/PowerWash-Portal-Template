@@ -66,132 +66,100 @@ export interface Service {
  */
 export const services: Service[] = [
   {
-    id: "service-one",
-    title: "Service One",
-    shortDescription: "Your primary service offering",
-    description: "Describe your main service offering here. Explain what makes it valuable to your customers, the problems it solves, and why clients should choose your business for this service.",
-    iconName: "Briefcase",
+    id: "house-washing",
+    title: "House Washing",
+    shortDescription: "Complete exterior cleaning for your home",
+    description: "Restore your home's curb appeal with our professional house washing service. We use a safe soft wash technique that effectively removes dirt, mold, mildew, algae, and grime from all types of siding including vinyl, brick, stucco, and wood without causing any damage.",
+    iconName: "Home",
     features: [
-      "Key feature or benefit",
-      "Another important feature",
-      "What sets you apart",
-      "Quality guarantee",
-      "Customer-focused approach"
+      "Safe soft wash technique for all siding types",
+      "Removes mold, mildew, algae & grime",
+      "Protects paint and surfaces",
+      "Improves curb appeal instantly",
+      "Eco-friendly cleaning solutions"
     ],
     image: "/services/service-1.svg",
-    price: "From $XXX"
+    price: "From $199"
   },
   {
-    id: "service-two",
-    title: "Service Two",
-    shortDescription: "Your secondary service offering",
-    description: "Describe your second service offering here. Detail the specific benefits, the process involved, and how it complements your other services or stands on its own.",
-    iconName: "Users",
+    id: "driveway-concrete",
+    title: "Driveway & Concrete",
+    shortDescription: "Restore your concrete surfaces to like-new condition",
+    description: "Our high-pressure concrete cleaning service removes years of built-up oil stains, tire marks, dirt, and grime from driveways, sidewalks, patios, and garage floors. We restore your concrete surfaces to their original clean appearance.",
+    iconName: "Car",
     features: [
-      "Primary benefit of this service",
-      "How it helps customers",
-      "Professional approach",
-      "Proven methodology",
-      "Satisfaction guaranteed"
+      "Removes oil stains & tire marks",
+      "High-pressure deep cleaning",
+      "Sidewalks & walkways included",
+      "Garage floor cleaning available",
+      "Sealing services optional"
     ],
     image: "/services/service-2.svg",
-    price: "From $XXX"
+    price: "From $149"
   },
   {
-    id: "service-three",
-    title: "Service Three",
-    shortDescription: "Additional service description",
-    description: "Outline your third service here. Explain the unique value proposition, target audience, and specific outcomes customers can expect when choosing this service.",
-    iconName: "Lightbulb",
+    id: "deck-patio",
+    title: "Deck & Patio Cleaning",
+    shortDescription: "Revitalize your outdoor living spaces",
+    description: "Bring your deck or patio back to life with our specialized cleaning service. We safely remove dirt, algae, mold, and weathered gray discoloration from wood, composite, and stone surfaces, preparing them for staining or sealing if desired.",
+    iconName: "Trees",
     features: [
-      "Innovative solutions",
-      "Expert implementation",
-      "Customized approach",
-      "Measurable results",
-      "Ongoing support"
+      "Safe for wood, composite & stone",
+      "Removes algae & mold buildup",
+      "Restores natural wood color",
+      "Prep for staining or sealing",
+      "Extends deck lifespan"
     ],
     image: "/services/service-3.svg",
-    price: "From $XXX"
+    price: "From $175"
   },
   {
-    id: "service-four",
-    title: "Service Four",
-    shortDescription: "Specialized service offering",
-    description: "Detail your fourth service here. Focus on the specialized nature of this offering, the expertise required, and the exceptional results your clients can expect.",
-    iconName: "Target",
+    id: "roof-cleaning",
+    title: "Roof Cleaning",
+    shortDescription: "Protect and extend the life of your roof",
+    description: "Our gentle soft wash roof cleaning removes ugly black streaks, moss, lichen, and algae that can damage your shingles and reduce your home's value. We use low-pressure techniques that are safe for all roofing materials.",
+    iconName: "CloudRain",
     features: [
-      "Targeted solutions",
-      "Industry expertise",
-      "Best practices",
-      "Quality assurance",
-      "Timely delivery"
+      "Removes black streaks & algae",
+      "Safe soft wash technique",
+      "Extends roof lifespan",
+      "Improves energy efficiency",
+      "All roofing materials welcome"
     ],
     image: "/services/service-4.svg",
-    price: "From $XXX"
+    price: "From $299"
   },
   {
-    id: "service-five",
-    title: "Service Five",
-    shortDescription: "Premium service option",
-    description: "Describe your premium service offering. Highlight the elevated experience, additional benefits, and exclusive features that make this service stand out.",
-    iconName: "Award",
+    id: "gutter-cleaning",
+    title: "Gutter Cleaning",
+    shortDescription: "Keep your gutters flowing freely",
+    description: "Prevent water damage and foundation issues with our thorough gutter cleaning service. We remove all debris, flush downspouts, and clean the exterior of your gutters to keep them functioning properly and looking great.",
+    iconName: "Droplets",
     features: [
-      "Premium quality",
-      "Exclusive benefits",
-      "Priority service",
-      "Dedicated support",
-      "Enhanced features"
+      "Complete debris removal",
+      "Downspout flushing included",
+      "Exterior gutter cleaning",
+      "Prevents water damage",
+      "Inspect for repairs needed"
     ],
     image: "/services/service-5.svg",
-    price: "From $XXX"
+    price: "From $125"
   },
   {
-    id: "service-six",
-    title: "Service Six",
-    shortDescription: "Growth-focused service",
-    description: "Explain your growth-oriented service. Show how this helps clients scale, improve, or achieve their business objectives through your expertise.",
-    iconName: "TrendingUp",
+    id: "commercial",
+    title: "Commercial Power Washing",
+    shortDescription: "Professional cleaning for businesses",
+    description: "Make a great first impression with our commercial power washing services. We clean storefronts, sidewalks, parking lots, dumpster areas, and building exteriors to keep your business looking professional and inviting to customers.",
+    iconName: "Building2",
     features: [
-      "Scalable solutions",
-      "Growth strategies",
-      "Performance optimization",
-      "Data-driven approach",
-      "Long-term partnership"
+      "Storefronts & entryways",
+      "Parking lots & garages",
+      "Dumpster pad cleaning",
+      "Graffiti removal available",
+      "Flexible scheduling options"
     ],
     image: "/services/service-6.svg",
     price: "Custom Quote"
-  },
-  {
-    id: "service-seven",
-    title: "Service Seven",
-    shortDescription: "Security and compliance",
-    description: "Detail your security or compliance-focused service. Explain how you protect clients, ensure regulatory compliance, and maintain the highest standards.",
-    iconName: "Shield",
-    features: [
-      "Comprehensive protection",
-      "Compliance expertise",
-      "Risk management",
-      "Regular audits",
-      "Peace of mind"
-    ],
-    image: "/services/service-7.svg",
-    price: "From $XXX"
-  },
-  {
-    id: "service-eight",
-    title: "Service Eight",
-    shortDescription: "Fast and efficient solutions",
-    description: "Describe your efficiency-focused service. Highlight quick turnaround times, streamlined processes, and how you help clients save time and resources.",
-    iconName: "Zap",
-    features: [
-      "Quick turnaround",
-      "Streamlined process",
-      "Efficient execution",
-      "Cost-effective",
-      "Immediate results"
-    ],
-    image: "/services/service-8.svg",
-    price: "From $XXX"
   }
 ];
 
@@ -209,8 +177,8 @@ export const services: Service[] = [
  */
 export const servicesSectionContent = {
   sectionTitle: "Our Services",
-  title: "Professional Solutions",
-  subtitle: "From individuals to businesses, we offer comprehensive services tailored to meet your unique needs and exceed your expectations.",
+  title: "Power Washing Solutions",
+  subtitle: "From residential homes to commercial properties, we offer comprehensive power washing services tailored to restore and protect your property.",
   button: {
     text: "View All Services",
     href: "/services"

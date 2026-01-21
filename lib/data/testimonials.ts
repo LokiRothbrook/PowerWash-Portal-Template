@@ -39,12 +39,12 @@
  */
 export const testimonialsSectionContent = {
   sectionTitle: "Testimonials",
-  title: "What our Clients Say",
-  subtitle: "Don't just take our word for it. Here's what homeowners and businesses have to say about our services.",
+  title: "What Our Customers Say",
+  subtitle: "Don't just take our word for it. Here's what homeowners and businesses throughout the Pittsfield area have to say about our power washing services.",
   trustIndicators: [
     {
       value: "500+",
-      label: "Happy Clients"
+      label: "Happy Customers"
     },
     {
       value: "4.9",
@@ -93,92 +93,92 @@ export interface Testimonial {
 export const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Client Name",
-    role: "Business Owner",
-    content: "Add a real testimonial from one of your satisfied customers here. Include specific details about the positive experience they had with your business.",
+    name: "Sarah Mitchell",
+    role: "Homeowner",
+    content: "I couldn't believe the difference! My vinyl siding looked brand new after PowerWash Pro cleaned it. The green algae that had been building up for years was completely gone. Highly recommend!",
     rating: 5,
     image: "/testimonials/client-1.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 2,
-    name: "Client Name",
-    role: "Manager",
-    content: "Include another customer testimonial that highlights different aspects of your service, such as professionalism, quality, or customer service.",
+    name: "Mike Thompson",
+    role: "Property Manager",
+    content: "We use PowerWash Pro for all 12 of our rental properties. They're reliable, professional, and their pricing is fair. The tenants always comment on how great the buildings look after cleaning.",
     rating: 5,
     image: "/testimonials/client-2.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 3,
-    name: "Client Name",
-    role: "Director",
-    content: "Feature a testimonial that speaks to the results and outcomes your clients have experienced. Specific numbers or achievements work great here.",
+    name: "Jennifer Davis",
+    role: "Homeowner",
+    content: "Our driveway had oil stains that we thought would never come out. PowerWash Pro made it look like we just had new concrete poured. Amazing transformation!",
     rating: 5,
     image: "/testimonials/client-3.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 4,
-    name: "Client Name",
-    role: "CEO",
-    content: "Add a testimonial from a business client that discusses the value you brought to their organization and how you exceeded their expectations.",
+    name: "Robert Chen",
+    role: "Restaurant Owner",
+    content: "They keep our patio dining area spotless for our customers. Professional, on-time, and they work around our business hours. Exactly what we needed.",
     rating: 5,
     image: "/testimonials/client-4.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 5,
-    name: "Client Name",
-    role: "Customer",
-    content: "Include a testimonial that emphasizes ease of working with your team, communication quality, and overall customer experience.",
+    name: "Lisa Anderson",
+    role: "Homeowner",
+    content: "The team was so careful around my flower beds and landscaping. They did an incredible job on our deck - it's ready for staining now. Very impressed with their attention to detail.",
     rating: 5,
     image: "/testimonials/client-5.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 6,
-    name: "Client Name",
-    role: "Partner",
-    content: "Feature a testimonial from a long-term client or partner that speaks to reliability, consistency, and the value of your ongoing relationship.",
+    name: "David Wilson",
+    role: "Homeowner",
+    content: "Been using PowerWash Pro for three years now. They come out every spring to clean our house and driveway. Consistent quality every single time. Wouldn't trust anyone else.",
     rating: 5,
     image: "/testimonials/client-6.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 7,
-    name: "Client Name",
-    role: "Client",
-    content: "Add a testimonial highlighting your problem-solving abilities and how you went above and beyond to deliver exceptional results.",
+    name: "Amanda Foster",
+    role: "Homeowner",
+    content: "I was worried about my old cedar shake siding, but they used the right pressure and technique. It looks fantastic and they didn't damage anything. True professionals!",
     rating: 5,
     image: "/testimonials/client-7.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 8,
-    name: "Client Name",
-    role: "Executive",
-    content: "Include a testimonial that discusses value for money, return on investment, or how your services have positively impacted their business.",
+    name: "James Martinez",
+    role: "Business Owner",
+    content: "Our storefront and sidewalk needed serious help. PowerWash Pro transformed our curb appeal completely. We've had customers comment on how clean everything looks now.",
     rating: 5,
     image: "/testimonials/client-8.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 9,
-    name: "Client Name",
-    role: "Customer",
-    content: "Feature a testimonial that highlights your expertise, industry knowledge, and the professional advice you provided.",
+    name: "Karen Brown",
+    role: "Homeowner",
+    content: "The black streaks on our roof were an eyesore for years. Their soft wash roof cleaning made such a difference. Our house looks 10 years younger!",
     rating: 5,
     image: "/testimonials/client-9.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   },
   {
     id: 10,
-    name: "Client Name",
-    role: "Business Owner",
-    content: "Add a testimonial that emphasizes why they would recommend your services to others and why they continue to choose your business.",
+    name: "Tom Patterson",
+    role: "Homeowner",
+    content: "Got a quote the same day I called, and they fit us in that week. Fast, efficient, and the results speak for themselves. Already recommended them to three neighbors.",
     rating: 5,
     image: "/testimonials/client-10.jpg",
-    link: "#" // Placeholder link
+    link: "#"
   }
 ];

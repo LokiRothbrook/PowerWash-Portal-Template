@@ -7,61 +7,72 @@ import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { heroSectionContent } from "@/lib/data"
 
-function LaserWaveBackground() {
+function RainBackground() {
+  // Generate rain drops only on client to avoid hydration mismatch
+  const [rainDrops, setRainDrops] = React.useState<Array<{
+    id: number;
+    left: string;
+    delay: number;
+    duration: number;
+    size: 'large' | 'small';
+  }>>([]);
+
+  React.useEffect(() => {
+    setRainDrops(
+      Array.from({ length: 50 }, (_, i) => ({
+        id: i,
+        left: `${Math.random() * 100}%`,
+        delay: Math.random() * 3,
+        duration: 1 + Math.random() * 1.5,
+        size: Math.random() > 0.7 ? 'large' : 'small',
+      }))
+    );
+  }, []);
+
   return (
     // Container for the background elements, ensuring overflow is hidden and elements don't interfere with interactions.
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {/* Animated Laser Wave Lines */}
-      {/* These divs create a visual effect of flowing lines, each with a different width and vertical position. */}
-      {/* The 'laser-wave' class likely defines their animation and styling. */}
-      <div className="laser-wave w-[200%] top-[15%]" />
-      <div className="laser-wave laser-wave-2 w-[180%] top-[35%]" />
-      <div className="laser-wave laser-wave-3 w-[220%] top-[55%]" />
-      <div className="laser-wave laser-wave-4 w-[190%] top-[75%]" />
-      <div className="laser-wave w-[210%] top-[90%]" style={{ animationDelay: '3s' }} />
+      {/* Rain drops */}
+      {rainDrops.map((drop) => (
+        <div
+          key={drop.id}
+          className={`rain-drop ${drop.size === 'large' ? 'rain-drop-large' : ''}`}
+          style={{
+            left: drop.left,
+            animationDelay: `${drop.delay}s`,
+            animationDuration: `${drop.duration}s`,
+          }}
+        />
+      ))}
 
-      {/* Glowing Orbs for depth */}
-      {/* These motion.divs create large, blurred glowing circles that animate to provide a sense of depth and movement. */}
+      {/* Water mist/spray effects */}
       <motion.div
-        className="wave-glow w-[400px] h-[400px] top-[10%] left-[-5%]"
-        // Animates scale and x-position for a subtle breathing and horizontal movement effect.
+        className="water-mist w-[400px] h-[400px] top-[10%] left-[-5%]"
         animate={{
           scale: [1, 1.2, 1],
-          x: [0, 30, 0],
+          opacity: [0.2, 0.4, 0.2],
         }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
       />
       <motion.div
-        className="wave-glow w-[500px] h-[500px] bottom-[5%] right-[-10%]"
-        // Animates scale and x-position with a slightly different pattern for variety.
+        className="water-mist w-[500px] h-[500px] bottom-[5%] right-[-10%]"
         animate={{
           scale: [1.2, 1, 1.2],
-          x: [0, -40, 0],
-        }}
-        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="wave-glow w-[300px] h-[300px] top-[50%] left-[40%]"
-        // Animates scale and opacity for a pulsating glow effect in the center.
-        animate={{
-          scale: [1, 1.3, 1],
-          opacity: [0.3, 0.5, 0.3],
+          opacity: [0.3, 0.15, 0.3],
         }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
       />
+      <motion.div
+        className="water-mist w-[300px] h-[300px] top-[50%] left-[40%]"
+        animate={{
+          scale: [1, 1.3, 1],
+          opacity: [0.15, 0.3, 0.15],
+        }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      />
 
-      {/* Subtle grid overlay */}
-      {/* An SVG-based grid pattern that provides a technical or futuristic aesthetic to the background. */}
-      <div className="absolute inset-0 opacity-[0.03]">
-        <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <defs>
-            <pattern id="hero-grid" width="4" height="4" patternUnits="userSpaceOnUse">
-              <path d="M 4 0 L 0 0 0 4" fill="none" stroke="currentColor" strokeWidth="0.1" className="text-primary" />
-            </pattern>
-          </defs>
-          <rect width="100" height="100" fill="url(#hero-grid)" />
-        </svg>
-      </div>
+      {/* Subtle water ripple pattern overlay */}
+      <div className="absolute inset-0 water-pattern opacity-50" />
     </div>
   )
 }
@@ -90,8 +101,8 @@ export function HeroSection() {
       ref={containerRef}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background"
     >
-      {/* Renders the animated background elements. */}
-      <LaserWaveBackground />
+      {/* Renders the animated rain/water background elements. */}
+      <RainBackground />
 
       {/* Main content wrapper, applies parallax 'y' and fade 'opacity' animations. */}
       <motion.div style={{ y, opacity }} className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">

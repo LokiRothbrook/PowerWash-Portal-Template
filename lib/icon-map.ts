@@ -49,7 +49,7 @@ import {
   // ========================================
 
   // -- General --
-  // Home,
+  Home,
   // Settings,
   // Search,
   // Filter,
@@ -138,8 +138,8 @@ import {
   // Sun,
   // Moon,
   // Cloud,
-  // CloudRain,
-  // Droplet,
+  CloudRain,
+  Droplets,
   // Wind,
 
   // -- Tech & Devices --
@@ -163,7 +163,7 @@ import {
 
   // -- Business --
   // Building,
-  // Building2,
+  Building2,
   // Store,
   // ShoppingCart,
   // ShoppingBag,
@@ -193,10 +193,10 @@ import {
   // Sparkles,
   // Flame,
   // Leaf,
-  // TreeDeciduous,
+  Trees,
   // Coffee,
   // Utensils,
-  // Car,
+  Car,
   // Plane,
   // Bike,
 
@@ -226,7 +226,7 @@ const iconMap: Record<string, LucideIcon> = {
   // ========================================
 
   // -- General --
-  // Home,
+  Home,
   // Settings,
   // Search,
   // Filter,
@@ -315,8 +315,8 @@ const iconMap: Record<string, LucideIcon> = {
   // Sun,
   // Moon,
   // Cloud,
-  // CloudRain,
-  // Droplet,
+  CloudRain,
+  Droplets,
   // Wind,
 
   // -- Tech & Devices --
@@ -340,7 +340,7 @@ const iconMap: Record<string, LucideIcon> = {
 
   // -- Business --
   // Building,
-  // Building2,
+  Building2,
   // Store,
   // ShoppingCart,
   // ShoppingBag,
@@ -370,10 +370,10 @@ const iconMap: Record<string, LucideIcon> = {
   // Sparkles,
   // Flame,
   // Leaf,
-  // TreeDeciduous,
+  Trees,
   // Coffee,
   // Utensils,
-  // Car,
+  Car,
   // Plane,
   // Bike,
 }

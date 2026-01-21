@@ -9,7 +9,7 @@ import {
   Menu,
   X,
   ChevronDown,
-  Sparkles,
+  Droplets,
   Facebook,
   Instagram,
   Youtube,
@@ -117,7 +117,7 @@ export function Header() {
               transition={{ duration: 0.6 }}
             >
               <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center glow-blue">
-                <Sparkles className="w-6 h-6 text-primary-foreground" />
+                <Droplets className="w-6 h-6 text-primary-foreground" />
               </div>
               <div className="absolute inset-0 rounded-xl bg-primary/30 blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
             </motion.div>

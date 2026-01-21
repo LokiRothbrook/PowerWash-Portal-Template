@@ -8,15 +8,25 @@ import { Button } from "@/components/ui/button"
 import { heroSectionContent } from "@/lib/data"
 
 function RainBackground() {
-  // Generate rain drops with random positions and delays
-  const rainDrops = React.useMemo(() => {
-    return Array.from({ length: 50 }, (_, i) => ({
-      id: i,
-      left: `${Math.random() * 100}%`,
-      delay: Math.random() * 3,
-      duration: 1 + Math.random() * 1.5,
-      size: Math.random() > 0.7 ? 'large' : 'small',
-    }));
+  // Generate rain drops only on client to avoid hydration mismatch
+  const [rainDrops, setRainDrops] = React.useState<Array<{
+    id: number;
+    left: string;
+    delay: number;
+    duration: number;
+    size: 'large' | 'small';
+  }>>([]);
+
+  React.useEffect(() => {
+    setRainDrops(
+      Array.from({ length: 50 }, (_, i) => ({
+        id: i,
+        left: `${Math.random() * 100}%`,
+        delay: Math.random() * 3,
+        duration: 1 + Math.random() * 1.5,
+        size: Math.random() > 0.7 ? 'large' : 'small',
+      }))
+    );
   }, []);
 
   return (

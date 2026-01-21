@@ -172,13 +172,45 @@ All images in `public` are automatically optimized by Next.js when using the `ne
 -   Gallery images: 800x600 minimum, larger images will be automatically resized
 -   Ensure images match the recommended aspect ratios
 
-### 5. Icons (`lucide-react`)
+### 5. Icons (`lucide-react` via `lib/icon-map.ts`)
 
-We use [Lucide React](https://lucide.dev/) for customizable SVG icons.
+We use [Lucide React](https://lucide.dev/) for customizable SVG icons. Due to Next.js tree-shaking, icons are managed through a centralized icon map.
 
-*   **Using Existing Icons:** In data files (e.g., `lib/data/services.ts`), you'll see `iconName` properties. Set these to the exact name of any Lucide icon (e.g., `"Briefcase"`, `"Users"`, `"Lightbulb"`). The components dynamically render the correct icon.
-*   **Finding More Icons:** Browse the full library of icons on the [Lucide website](https://lucide.dev/icons/).
-*   **Adding New Icons:** If a specific icon isn't imported in a component that needs it, you'll need to add it to the import statement of that component (e.g., `import { NewIconName } from "lucide-react"`).
+*   **Using Icons:** In data files (e.g., `lib/data/services.ts`), set the `iconName` property to match an icon name in the icon map (e.g., `"Briefcase"`, `"Users"`, `"Lightbulb"`).
+*   **Finding More Icons:** Browse the full library on the [Lucide website](https://lucide.dev/icons/).
+*   **Adding New Icons:** To use an icon not already in the map:
+    1.  Open `lib/icon-map.ts`
+    2.  Find the icon in the commented list (organized by category) or add a new import
+    3.  Uncomment the icon in BOTH the `import` statement AND the `iconMap` object
+    4.  Use the icon name in your data files
+
+**Example:** To add the `Coffee` icon:
+```typescript
+// In lib/icon-map.ts
+
+import {
+  // ... existing imports ...
+  Coffee,  // Uncomment this
+  // ...
+} from "lucide-react"
+
+const iconMap: Record<string, LucideIcon> = {
+  // ... existing icons ...
+  Coffee,  // Uncomment this
+  // ...
+}
+```
+
+Then use it in your data:
+```typescript
+// In lib/data/services.ts
+{
+  iconName: "Coffee",  // Now available
+  // ...
+}
+```
+
+**Performance Note:** Only uncomment icons you actually use. Each icon adds ~1-2KB to the bundle.
 
 ### 6. Contact Form & Email Template
 
